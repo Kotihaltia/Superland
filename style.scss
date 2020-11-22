@@ -2,9 +2,30 @@
     font-family: "Fira Sans", sans-serif;
     padding: 0;
     margin: 0;
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 }
 body {
     overflow: hidden;
+}
+.page {
+    position: absolute;
+    right: 520px;
+    height: 100%;
+    width: 40%;
+    background-color: #fff;
+    box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
+    transition: all 0.2s ease-in 0.2s;
+    transform: translateX(0%);
+    overflow: scroll;
+    z-index: 3;
+}
+.page-active {
+    transform: translateX(100%);
+    transition: all 0.2s ease-in 0.2s;
+    overflow: hidden;
+    width: 0;
 }
 
 .main-page {
@@ -238,24 +259,7 @@ body {
 }
 
 /*page-about====================================================================================*/
-.page-about {
-    position: absolute;
-    right: 520px;
-    height: 100%;
-    width: 40%;
-    background-color: #fff;
-    box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
-    transition: all 0.2s ease-in 0.2s;
-    transform: translateX(0%);
-    overflow: scroll;
-    z-index: 2;
-}
-.page-about-active {
-    transform: translateX(100%);
-    transition: all 0.2s ease-in 0.2s;
-    overflow: hidden;
-    width: 0;
-}
+
 .title-about {
     margin-top: 42px;
     background-color: #e96032;
@@ -275,10 +279,6 @@ body {
     background-color: #e96032;
     width: 440px;
     height: 60px;
-}
-
-.page-about::-webkit-scrollbar {
-    width: 0px;
 }
 
 /*slider=====================================================================================*/
@@ -344,24 +344,6 @@ body {
     padding-bottom: 60px;
 }
 /*attraction==================================================================================*/
-.page-atrakce {
-    position: absolute;
-    right: 520px;
-    height: 100%;
-    width: 40%;
-    background-color: #fff;
-    box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
-    transition: all 0.2s ease-in 0.2s;
-    transform: translateX(0%);
-    overflow: scroll;
-    z-index: 3;
-}
-.page-atrakce-active {
-    transform: translateX(100%);
-    transition: all 0.2s ease-in 0.2s;
-    overflow: hidden;
-    width: 0;
-}
 
 .title-atrakce {
     margin-top: 42px;
@@ -390,29 +372,8 @@ body {
     }
 }
 
-.page-atrakce::-webkit-scrollbar {
-    width: 0px;
-}
-
 /*services==============================================================*/
-.page-services {
-    position: absolute;
-    right: 520px;
-    height: 100%;
-    width: 40%;
-    background-color: #fff;
-    box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
-    transition: all 0.2s ease-in 0.2s;
-    transform: translateX(0%);
-    overflow: scroll;
-    z-index: 4;
-}
-.page-services-active {
-    transform: translateX(100%);
-    transition: all 0.2s ease-in 0.2s;
-    overflow: hidden;
-    width: 0;
-}
+
 .title-services {
     margin-top: 42px;
     background-color: #e96032;

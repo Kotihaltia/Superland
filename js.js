@@ -4,62 +4,43 @@ document.querySelector('.menu-icon-wrapper').onclick = function () {
     document.querySelector('.site-menu').classList.toggle('site-menu-active');
 
     if (!document.querySelector('.menu-icon').classList.contains('.menu-icon-active')) {
-        document.querySelectorAll('.page-about').forEach(item => {
-            item.classList.add('page-about-active');
+        document.querySelectorAll('.page').forEach(item => {
+            item.classList.add('page-active');
         })
 
     }
-    if (!document.querySelector('.menu-icon').classList.contains('.menu-icon-active')) {
-        document.querySelectorAll('.page-atrakce').forEach(item => {
-            item.classList.add('page-atrakce-active');
+
+}
+
+document.querySelectorAll('.site-menu .item').forEach(item => {
+
+    item.addEventListener('click', (e) => {
+        console.log(e.target)
+        const target = e.target.closest('.item')
+        console.log(target.dataset.id)
+        const pageIdMenu = target.dataset.id
+        document.querySelectorAll('.page').forEach(page => {
+
+            console.log(page)
+            const pageId = page.getAttribute('id')
+            console.log(pageId)
+            if ((pageIdMenu !== pageId) && !page.classList.contains('page-active')) {
+                page.classList.add('page-active');
+            }
         })
 
-    }
-    if (!document.querySelector('.menu-icon').classList.contains('.menu-icon-active')) {
-        document.querySelectorAll('.page-services').forEach(item => {
-            item.classList.add('page-services-active');
-        })
+        document.querySelector(`#${pageIdMenu}`).classList.toggle('page-active');
 
-    }
-}
+        if (document.querySelector(`#${pageIdMenu}`).classList.contains('page-active')) {
+            $('.single-slide').slick('unslick');
+        } else {
+            setTimeout(() => {
+                $('.single-slide').slick();
+            }, 800);
 
-
-
-
-document.querySelector('.o-parku').onclick = function () {
-
-    document.querySelector('.page-about').classList.toggle('page-about-active');
-    if (document.querySelector('.page-about').classList.contains('page-about-active')) {
-        $('.single-slide').slick('unslick');
-    } else {
-        setTimeout(() => {
-            $('.single-slide').slick();
-        }, 800);
-
-    }
-
-}
-document.querySelector('.services').onclick = function () {
-
-    document.querySelector('.page-services').classList.toggle('page-services-active');
-    if (document.querySelector('.page-services').classList.contains('page-services-active')) {
-        $('.single-slide').slick('unslick');
-    } else {
-        setTimeout(() => {
-            $('.single-slide').slick();
-        }, 600);
-
-    }
-
-}
-document.querySelector('.atrakce').onclick = function () {
-
-    document.querySelector('.page-atrakce').classList.toggle('page-atrakce-active');
-    if (document.querySelector('.page-atrakce').classList.contains('page-atrakce-active')) {
-
-    }
-
-}
+        }
+    })
+})
 
 
 
