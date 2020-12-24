@@ -29,11 +29,61 @@ body {
 }
 
 .main-page {
-    background-image: url(/img/4site-kid-2.png);
+    // новый урл
+
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    z-index: 0;
+    position: relative;
+    //..несколько лассов
+    .back {
+        height: 100vh;
+        width: 100%;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.back-1 {
+            background-image: url(/img/4site-kid-2.png);
+        }
+        &.back-2 {
+            background-image: url(/img/logo.png);
+        }
+        &.back-3 {
+            background-image: url(/img/2.jpg);
+        }
+    }
+    .color {
+        position: absolute;
+        top: 0;
+        z-index: -2;
+        height: 100vh;
+        width: 100%;
+
+        &.back-1 {
+            background-color: #c1d3ff;
+            right: -100%;
+        }
+        &.back-2 {
+            background-color: #2d5da4;
+            right: -100%;
+        }
+        &.back-3 {
+            background-color: green;
+            right: -100%;
+        }
+        &.show {
+            z-index: 0;
+            right: 0;
+            transition: right 1s ease-in 0.4s;
+        }
+        &.hide {
+            z-index: 0;
+            right: 100%;
+            transition: right 1s ease-in 0.4s;
+        }
+    }
 }
 
 .logo {
@@ -81,14 +131,38 @@ body {
 /* burger-menu ==================================================================================*/
 
 .menu-burger {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     right: 0;
     height: 100%;
     width: 80px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
     z-index: 7;
     transition: background-color 0.2s ease-in 0.2s;
+    &-social {
+        margin-top: auto;
+        margin-bottom: 90%;
+        position: relative;
+        text-align: center;
+        &-logo {
+            height: 50px;
+            list-style: none;
+            justify-content: space-around;
+        }
+    }
+    &-color {
+        &.color-1 {
+            background-color: #c1d3ff;
+        }
+        &.color-2 {
+            background-color: #2d5da4;
+        }
+        &.color-3 {
+            background-color: green;
+        }
+    }
 }
 
 .menu-burger-active {
@@ -96,7 +170,7 @@ body {
     right: 0;
     height: 100%;
     width: 80px;
-    background-color: #bbd3ff;
+    background-color: #c1d3ff;
     box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
     z-index: 7;
     transition: background-color 0.2s ease-in 0.2s;
@@ -193,12 +267,14 @@ body {
 .site-menu-list {
     margin-top: 80px;
     margin-bottom: 50px;
+    :hover {
+        color: #e96032;
+    }
 }
 
 .site-menu-list a {
     text-decoration: none;
     font-family: Fira Sans;
-
     font-weight: bold;
     font-size: 42px;
     line-height: 50px;
@@ -232,7 +308,7 @@ body {
     }
 }
 .button-celebrate:hover {
-    background: #e90000;
+    background: #e96032;
     box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
 }
 
@@ -244,7 +320,7 @@ body {
 .phone-mail p {
     font-family: Fira Sans;
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     color: #8a92a3;
 }
@@ -252,7 +328,6 @@ body {
     color: #2d52a4;
     text-decoration: none;
     font-family: Fira Sans;
-
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
@@ -291,7 +366,6 @@ body {
     object-fit: cover;
     &__item img {
         display: block;
-
         margin-top: 40px;
         margin-left: 78px;
         height: 350px;
@@ -312,7 +386,8 @@ body {
 .text-about-all-two,
 .text-atrakce-all,
 .text-services-all,
-.text-courses-all {
+.text-courses-all,
+.text-prices-all {
     margin-top: 24px;
     margin-left: 78px;
     margin-bottom: 100px;
@@ -397,6 +472,7 @@ body {
     white-space: nowrap;
     letter-spacing: 1px;
     &-last {
+        font-size: 14px;
         margin-top: 20px;
         line-height: 24px;
         letter-spacing: 1px;
@@ -436,4 +512,99 @@ body {
         line-height: 24px;
         letter-spacing: 1px;
     }
+}
+
+/*services==============================================================*/
+.title-prices {
+    margin-top: 42px;
+    background-color: #e96032;
+    width: 280px;
+    height: 60px;
+
+    &-text {
+        color: #fff;
+        text-align: center;
+        padding-top: 12px;
+        white-space: nowrap;
+    }
+}
+
+.text-prices {
+    margin-top: 32px;
+    &-color {
+        line-height: 22px;
+        margin-top: 8px;
+        color: #e96032;
+        font-size: 14px;
+        letter-spacing: 1px;
+        &-fat {
+            margin-top: 6px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #e96032;
+        }
+    }
+    &-info {
+        letter-spacing: 1px;
+        line-height: 22px;
+        margin-top: 32px;
+        font-size: 14px;
+        color: #8a92a3;
+    }
+}
+
+/*events==============================================================*/
+.title-events {
+    margin-top: 42px;
+    background-color: #e96032;
+    width: 280px;
+    height: 60px;
+    &-text {
+        color: #fff;
+        text-align: center;
+        padding-top: 12px;
+        white-space: nowrap;
+    }
+}
+
+.text-events-color {
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 201px;
+    color: #e96032;
+    font-size: 14px;
+}
+
+.events-info {
+    margin-top: 12px;
+    margin-left: 84px;
+    border-top: thin solid #e6edff;
+    width: 460px;
+    display: flex;
+    flex-direction: row;
+    &-time {
+        font-size: 14px;
+        margin-top: 14px;
+        color: #2d52a4;
+    }
+    &-text {
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 83px;
+        line-height: 24px;
+        &-last {
+            margin-left: 87px;
+            a {
+                color: #2d52a4;
+            }
+            :hover {
+                color: #e96032;
+            }
+        }
+    }
+}
+.events-info-last {
+    margin-top: 50px;
 }

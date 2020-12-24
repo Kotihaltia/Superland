@@ -19,26 +19,36 @@
 </head>
 
 <body>
-    <a class="title-button" href="">
-        <p> Objednat oslavu</p>
+    <a class="title-button" href="#">
+        <p>Objednat oslavu</p>
     </a>
 
     <h2 class="logo">
-        <a href="#"><img src="/img/logo.png" alt=""></a>
+        <a href="#"><img src="/img/sl-logo-white.svg" alt="Company logotype"></a>
     </h2>
     <div class="menu-burger menu-burger-active">
         <div class="menu-icon-wrapper">
             <div class="menu-icon"></div>
         </div>
+
+        <ul class="menu-burger-social">
+            <li class="menu-burger-social-logo"><a href="#"><img src="/img/instalogo.png" alt="instagram logotype"></a>
+            </li>
+            <li class="menu-burger-social-logo"><a href="#"><img src="/img/instalogo.png" alt="instagram logotype"></a>
+            </li>
+            <li class="menu-burger-social-logo"><a href="#"><img src="/img/instalogo.png" alt="instagram logotype"></a>
+            </li>
+        </ul>
+
     </div>
     <nav class="site-menu site-menu-active">
         <ul class="site-menu-list">
-            <li class="item park" data-id='about'><a href="#about">O parku</a></li>
+            <li class="item about" data-id='about'><a href="#about">O parku</a></li>
             <li class="item atrakce" data-id='attraction'><a href="#attraction">Atrakce</a></li>
             <li class="item services" data-id='services'><a href="#services">Služby</a></li>
-            <li class="prices"><a href="">Ceny</a></li>
-            <li class="events"><a href="">Události</a></li>
-            <li class="contacts"><a href="">Kontakty</a></li>
+            <li class="item prices" data-id='prices'><a href="#prices">Ceny</a></li>
+            <li class="item events" data-id='events'><a href="#events">Události</a></li>
+            <li class="item contacts" data-id='contacts'><a href="#contacts">Kontakty</a></li>
         </ul>
 
         <a class="button-celebrate" href="">
@@ -60,28 +70,29 @@
 
 
     <main class="main-page">
+        <div class="back back-1"></div>
+        <div class="color">
+            <div class="color back-1 show"></div>
+            <div class="color back-2"></div>
+            <div class="color back-3"></div>
+        </div>
+
+
+
+
+
+
+
+
+
         <div id="about" class="page page-active">
             <div class="title-about">
                 <h1 class="title-about-text">O nás</h1>
             </div>
 
 
-            <div class="slider-box">
-                <div class="slider">
-                    <div class="single-slide">
-                        <div class="slider__item">
-                            <img src="/img/6.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/4.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/6.png" alt="">
-                        </div>
-                    </div>
-                    <!-- КНОПКИ "НАЗАД" И "ВПЕРЁД" -->
-
-                </div>
+            <div class="slider__item">
+                <img src="/img/6.png" alt="">
             </div>
 
 
@@ -101,22 +112,8 @@
                 <h1 class="title-about-text">Rodinná restaurace</h1>
             </div>
 
-            <div class="slider-box">
-                <div class="slider">
-                    <div class="single-slide">
-                        <div class="slider__item">
-                            <img src="/img/6.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/4.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                            <img src="/img/6.png" alt="">
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="slider__item">
+                <img src="/img/rest.jpg" alt="">
             </div>
 
 
@@ -241,11 +238,74 @@
             </div>
         </div>
 
+        <div id="prices" class="page page-active">
+
+            <div class="title-prices">
+                <h1 class="title-prices-text">Vstupné</h1>
+            </div>
+
+            <div class="text-prices-all">
+                <p class="text-prices">PO-PÁ</p>
+                <p class="text-prices-color-fat">299 Kč</p>
+                <p class="text-prices">SO-NE / Svátky</p>
+                <p class="text-prices-color-fat">349 Kč</p>
+                <p class="text-prices">ZDARMA:</p>
+
+                <p class="text-prices-color">
+                    Rodiče/Doprovod</br>
+                    Děti do 1 roku a starší 16 let</br>
+                    Děti s průkazem ZTP, ZTP/P
+                </p>
+
+                <p class="text-prices-info">
+                    *Ceny za jednu vstupenku pro jednoho hosta na celý den.</br>
+                    Vstupenka pro děti od 1 roku do 16 let včetně. Děti do 1</br>
+                    roku a starší 16 let, děti s průkazem ZTP, ZTP/P a dospělí</br>
+                    doprovázející dítě jsou ZDARMA! U dětí mladších než 1 rok</br>
+                    a starších 16 let musí být při vstupu do parku předložen</br>
+                    doklad potvrzující věk. Zjistěte přesné ceny a informace</br>
+                    v parku.
+                </p>
+            </div>
+
+        </div>
 
 
+        <div id="events" class="page page-active">
 
+            <div class="title-events">
+                <h1 class="title-events-text">Novinky</h1>
+            </div>
 
+            <p class="text-events-color">18 prosince, pátek</p>
 
+            <div class="events-info">
+                <p class="events-info-time">09:00</p>
+                <p class="events-info-text">
+                    Naši milí hosté, bohužel musíme znovu uzavřít náš park, z důvodu nařízení vlády. Situaci
+                    monitorujeme každý den a jakmile budou nějaké změny, budeme vás informovat.
+                </p>
+            </div>
+
+            <p class="text-events-color">2 prosince, prostředí</p>
+
+            <div class="events-info">
+                <p class="events-info-time">11:01</p>
+                <p class="events-info-text events-info-text-last">
+                    Do našeho SUPERLANDoveho týmu hledáme kolegu/kolegyni na pozici operátor. Pro další informace nás
+                    kontaktujte na: <a href="mailto:info@superland.cz">info@superland.cz</a>
+                </p>
+            </div>
+
+            <div class="events-info events-info-last">
+                <p class="events-info-time">11:02</p>
+                <p class="events-info-text events-info-text-last">
+                    Hledáme fajn kolegy na pozici číšníka/servírky.
+                    Pro další informace nás kontaktujte na:
+                    <a href="mailto:info@superland.cz">info@superland.cz</a>
+                </p>
+            </div>
+        </div>
 
 
     </main>

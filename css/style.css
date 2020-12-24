@@ -38,11 +38,69 @@ body {
 }
 
 .main-page {
-  background-image: url(/img/4site-kid-2.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.main-page .back {
+  height: 100vh;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-page .back.back-1 {
+  background-image: url(/img/4site-kid-2.png);
+}
+
+.main-page .back.back-2 {
+  background-image: url(/img/logo.png);
+}
+
+.main-page .back.back-3 {
+  background-image: url(/img/2.jpg);
+}
+
+.main-page .color {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-page .color.back-1 {
+  background-color: #c1d3ff;
+  right: -100%;
+}
+
+.main-page .color.back-2 {
+  background-color: #2d5da4;
+  right: -100%;
+}
+
+.main-page .color.back-3 {
+  background-color: green;
+  right: -100%;
+}
+
+.main-page .color.show {
+  z-index: 0;
+  right: 0;
+  -webkit-transition: right 1s ease-in 0.4s;
+  transition: right 1s ease-in 0.4s;
+}
+
+.main-page .color.hide {
+  z-index: 0;
+  right: 100%;
+  -webkit-transition: right 1s ease-in 0.4s;
+  transition: right 1s ease-in 0.4s;
 }
 
 .logo {
@@ -93,11 +151,18 @@ body {
 
 /* burger-menu ==================================================================================*/
 .menu-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   right: 0;
   height: 100%;
   width: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
           box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
   z-index: 7;
@@ -105,12 +170,38 @@ body {
   transition: background-color 0.2s ease-in 0.2s;
 }
 
+.menu-burger-social {
+  margin-top: auto;
+  margin-bottom: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.menu-burger-social-logo {
+  height: 50px;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu-burger-color.color-1 {
+  background-color: #c1d3ff;
+}
+
+.menu-burger-color.color-2 {
+  background-color: #2d5da4;
+}
+
+.menu-burger-color.color-3 {
+  background-color: green;
+}
+
 .menu-burger-active {
   position: absolute;
   right: 0;
   height: 100%;
   width: 80px;
-  background-color: #bbd3ff;
+  background-color: #c1d3ff;
   -webkit-box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
           box-shadow: -4px 0px 10px rgba(45, 82, 164, 0.1);
   z-index: 7;
@@ -236,6 +327,10 @@ body {
   margin-bottom: 50px;
 }
 
+.site-menu-list :hover {
+  color: #e96032;
+}
+
 .site-menu-list a {
   text-decoration: none;
   font-family: Fira Sans;
@@ -278,7 +373,7 @@ body {
 }
 
 .button-celebrate:hover {
-  background: #e90000;
+  background: #e96032;
   -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
           box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
 }
@@ -291,7 +386,7 @@ body {
 .phone-mail p {
   font-family: Fira Sans;
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   color: #8a92a3;
 }
@@ -359,7 +454,8 @@ body {
 .text-about-all-two,
 .text-atrakce-all,
 .text-services-all,
-.text-courses-all {
+.text-courses-all,
+.text-prices-all {
   margin-top: 24px;
   margin-left: 78px;
   margin-bottom: 100px;
@@ -447,6 +543,7 @@ body {
 }
 
 .text-services-last {
+  font-size: 14px;
   margin-top: 20px;
   line-height: 24px;
   letter-spacing: 1px;
@@ -487,4 +584,114 @@ body {
   margin-top: 20px;
   line-height: 24px;
   letter-spacing: 1px;
+}
+
+/*services==============================================================*/
+.title-prices {
+  margin-top: 42px;
+  background-color: #e96032;
+  width: 280px;
+  height: 60px;
+}
+
+.title-prices-text {
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  white-space: nowrap;
+}
+
+.text-prices {
+  margin-top: 32px;
+}
+
+.text-prices-color {
+  line-height: 22px;
+  margin-top: 8px;
+  color: #e96032;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.text-prices-color-fat {
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e96032;
+}
+
+.text-prices-info {
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-top: 32px;
+  font-size: 14px;
+  color: #8a92a3;
+}
+
+/*events==============================================================*/
+.title-events {
+  margin-top: 42px;
+  background-color: #e96032;
+  width: 280px;
+  height: 60px;
+}
+
+.title-events-text {
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  white-space: nowrap;
+}
+
+.text-events-color {
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-left: 201px;
+  color: #e96032;
+  font-size: 14px;
+}
+
+.events-info {
+  margin-top: 12px;
+  margin-left: 84px;
+  border-top: thin solid #e6edff;
+  width: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.events-info-time {
+  font-size: 14px;
+  margin-top: 14px;
+  color: #2d52a4;
+}
+
+.events-info-text {
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 83px;
+  line-height: 24px;
+}
+
+.events-info-text-last {
+  margin-left: 87px;
+}
+
+.events-info-text-last a {
+  color: #2d52a4;
+}
+
+.events-info-text-last :hover {
+  color: #e96032;
+}
+
+.events-info-last {
+  margin-top: 50px;
 }
