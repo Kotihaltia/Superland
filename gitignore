@@ -1,0 +1,8 @@
+.idea/*
+node_modules/*
+webpack/passport.config.js
+webpack/reports/
+_script_dev.js
+_style_dev.css
+.DS_Store
+
