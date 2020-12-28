@@ -16,6 +16,7 @@ document.querySelectorAll('.site-menu .item').forEach(item => {
 
     item.addEventListener('click', (e) => {
         console.log(e.target)
+
         const target = e.target.closest('.item')
         console.log(target.dataset.id)
         const pageIdMenu = target.dataset.id
