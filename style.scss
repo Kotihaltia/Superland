@@ -282,6 +282,9 @@ body {
 }
 .phone-mail {
     margin-top: 170px;
+    a:hover {
+        color: #e96032;
+    }
 }
 
 /* menu-button ==================================================================================*/
@@ -656,6 +659,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    a:hover {
+        color: #e96032;
+    }
 
     &-time {
         white-space: nowrap;
@@ -663,13 +669,28 @@ body {
         font-size: 18px;
         color: #2d52a4;
     }
+
     &-text {
+        text-decoration: none;
         white-space: nowrap;
-        margin-top: 25px;
+        margin-top: 23px;
         letter-spacing: 1px;
         color: #2d52a4;
         font-family: Fira Sans;
         font-weight: 600;
         font-size: 18px;
+    }
+}
+
+.contacts-last {
+    margin-top: 60px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px;
+    &-link {
+        color: #2d52a4;
+    }
+    a:hover {
+        color: #e96032;
     }
 }
