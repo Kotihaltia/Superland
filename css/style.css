@@ -714,7 +714,7 @@ body {
 }
 
 .text-contacts-color {
-  margin-top: 12px;
+  margin-top: 18px;
   color: #2d52a4;
   text-decoration: none;
   font-family: Fira Sans;
@@ -724,7 +724,7 @@ body {
 }
 
 .text-contacts-color-fat {
-  margin-top: 12px;
+  margin-top: 50px;
   font-size: 28px;
   font-weight: 700;
   color: #e96032;
@@ -736,8 +736,8 @@ body {
 }
 
 .contacts-info {
-  margin-bottom: -5px;
-  margin-top: 30px;
+  margin-bottom: -25px;
+  margin-top: 50px;
   border-top: thin solid #e6edff;
   width: 452px;
   height: auto;
@@ -776,7 +776,7 @@ body {
 }
 
 .contacts-last {
-  margin-top: 60px;
+  margin-top: 90px;
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 18px;
