@@ -387,7 +387,8 @@ body {
 .text-attraction-all,
 .text-services-all,
 .text-courses-all,
-.text-prices-all {
+.text-prices-all,
+.text-contacts-all {
     margin-top: 24px;
     margin-left: 78px;
     margin-bottom: 100px;
@@ -607,4 +608,68 @@ body {
 }
 .events-info-last {
     margin-top: 50px;
+}
+
+//contacts=============================================================
+
+.title-contacts {
+    margin-top: 42px;
+    background-color: #e96032;
+    width: 290px;
+    height: 60px;
+    &-text {
+        color: #fff;
+        text-align: center;
+        padding-top: 12px;
+        white-space: nowrap;
+    }
+}
+
+.text-contacts-color {
+    margin-top: 12px;
+    color: #2d52a4;
+    text-decoration: none;
+    font-family: Fira Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+
+    &-fat {
+        margin-top: 12px;
+        font-size: 28px;
+        font-weight: 700;
+        color: #e96032;
+    }
+}
+
+.title-map {
+    margin-left: 78px;
+    margin-top: 40px;
+}
+
+.contacts-info {
+    margin-bottom: -5px;
+    margin-top: 30px;
+    border-top: thin solid #e6edff;
+    width: 452px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-time {
+        white-space: nowrap;
+        margin-top: 25px;
+        font-size: 18px;
+        color: #2d52a4;
+    }
+    &-text {
+        white-space: nowrap;
+        margin-top: 25px;
+        letter-spacing: 1px;
+        color: #2d52a4;
+        font-family: Fira Sans;
+        font-weight: 600;
+        font-size: 18px;
+    }
 }

@@ -32,14 +32,7 @@ document.querySelectorAll('.site-menu .item').forEach(item => {
 
         document.querySelector(`#${pageIdMenu}`).classList.toggle('page-active');
 
-        if (document.querySelector(`#${pageIdMenu}`).classList.contains('page-active')) {
-            $('.single-slide').slick('unslick');
-        } else {
-            setTimeout(() => {
-                $('.single-slide').slick();
-            }, 800);
 
-        }
     })
 })
 
