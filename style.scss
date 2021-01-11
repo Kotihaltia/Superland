@@ -854,13 +854,8 @@ body {
     font-size: 14px;
     margin-bottom: 30px;
 
-    input {
-        color: #e6edff;
-        border-radius: 0%;
-        border: none;
-    }
     span {
-        padding-left: 8px;
+        padding-left: 10px;
     }
 }
 
@@ -903,7 +898,21 @@ body {
         letter-spacing: 1px;
     }
 }
+
 .celebrate-button:hover {
     background: #e96032;
     box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
+}
+
+.checkbox {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 410px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 22px;
 }
