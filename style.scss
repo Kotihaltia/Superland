@@ -158,10 +158,10 @@ body {
     z-index: 4;
     border: none;
     background: #cf6230;
-    box-shadow: 0px 4px 0.5px #cf6230;
+    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
     p {
         font-family: Fira Sans;
-        padding-top: 22px;
+        padding-top: 20px;
         font-size: 14px;
         line-height: 14px;
         font-weight: 700;
@@ -326,6 +326,9 @@ body {
     margin-bottom: 50px;
     :hover {
         color: #e96032;
+        p {
+            color: #ffffff;
+        }
     }
 }
 
@@ -337,6 +340,7 @@ body {
     line-height: 50px;
     color: #2d52a4;
 }
+
 .phone-mail {
     margin-top: 170px;
     a:hover {
@@ -353,7 +357,7 @@ body {
     left: 120px;
     border: none;
     background: #e96032;
-    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.3);
+    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
     p {
         font-family: Fira Sans;
         padding-top: 19px;
@@ -374,7 +378,7 @@ body {
 }
 .button-celebrate:hover {
     background: #e96032;
-    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
+    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }
 
 /* phone-mail ==================================================================================*/
@@ -459,7 +463,8 @@ body {
 .text-services-all,
 .text-courses-all,
 .text-prices-all,
-.text-contacts-all {
+.text-contacts-all,
+.text-celebrate-all {
     margin-top: 24px;
     margin-left: 78px;
     margin-bottom: 100px;
@@ -770,4 +775,135 @@ body {
     a:hover {
         color: #e96032;
     }
+}
+
+//celebrate=============================================================================
+.title-celebrate {
+    margin-top: 42px;
+    background-color: #e96032;
+    width: 300px;
+    height: 60px;
+    &-text {
+        color: #fff;
+        text-align: center;
+        padding-top: 12px;
+        white-space: nowrap;
+    }
+}
+
+.text-celebrate {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 50px;
+    color: #dfa265;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    &-info {
+        color: #8a92a3;
+    }
+    &-counter {
+        font-size: 14px;
+    }
+}
+
+.order__inputs {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    input {
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 22px;
+        width: 220px;
+        padding: 11px 13px 9px;
+        border: thin solid #e6edff;
+        border-radius: 2px;
+        box-sizing: border-box;
+        height: 44px;
+    }
+    .m-time {
+        margin-left: 20px;
+    }
+}
+
+.counter-container {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    input {
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 22px;
+        width: 44px;
+        padding: 11px 13px 9px;
+        border: thin solid #e6edff;
+        border-radius: 2px;
+        box-sizing: border-box;
+        height: 44px;
+    }
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    input {
+        color: #e6edff;
+        border-radius: 0%;
+        border: none;
+    }
+    span {
+        padding-left: 8px;
+    }
+}
+
+.order__personal {
+    input {
+        margin-bottom: 20px;
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 22px;
+        width: 400px;
+        padding: 11px 13px 9px;
+        border: thin solid #e6edff;
+        border-radius: 2px;
+        box-sizing: border-box;
+        height: 44px;
+    }
+    .cb-phone {
+        margin-bottom: 40px;
+    }
+}
+
+.celebrate-button {
+    position: fixed;
+    text-decoration: none;
+    width: 205px;
+    height: 52px;
+    border: none;
+    background: #e96032;
+    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
+    p {
+        font-family: Fira Sans;
+        padding-top: 19px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        white-space: nowrap;
+        letter-spacing: 1px;
+    }
+}
+.celebrate-button:hover {
+    background: #e96032;
+    box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }

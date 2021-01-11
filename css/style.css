@@ -180,13 +180,13 @@ body {
   z-index: 4;
   border: none;
   background: #cf6230;
-  -webkit-box-shadow: 0px 4px 0.5px #cf6230;
-          box-shadow: 0px 4px 0.5px #cf6230;
+  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
+          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }
 
 .title-button p {
   font-family: Fira Sans;
-  padding-top: 22px;
+  padding-top: 20px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
@@ -395,6 +395,10 @@ body {
   color: #e96032;
 }
 
+.site-menu-list :hover p {
+  color: #ffffff;
+}
+
 .site-menu-list a {
   text-decoration: none;
   font-family: Fira Sans;
@@ -421,8 +425,8 @@ body {
   left: 120px;
   border: none;
   background: #e96032;
-  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.3);
-          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.3);
+  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
+          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
 }
 
 .button-celebrate p {
@@ -448,8 +452,8 @@ body {
 
 .button-celebrate:hover {
   background: #e96032;
-  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
-          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.5);
+  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
+          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }
 
 /* phone-mail ==================================================================================*/
@@ -537,7 +541,8 @@ body {
 .text-services-all,
 .text-courses-all,
 .text-prices-all,
-.text-contacts-all {
+.text-contacts-all,
+.text-celebrate-all {
   margin-top: 24px;
   margin-left: 78px;
   margin-bottom: 100px;
@@ -877,4 +882,168 @@ body {
 
 .contacts-last a:hover {
   color: #e96032;
+}
+
+.title-celebrate {
+  margin-top: 42px;
+  background-color: #e96032;
+  width: 300px;
+  height: 60px;
+}
+
+.title-celebrate-text {
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  white-space: nowrap;
+}
+
+.text-celebrate {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-top: 50px;
+  color: #dfa265;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.text-celebrate-info {
+  color: #8a92a3;
+}
+
+.text-celebrate-counter {
+  font-size: 14px;
+}
+
+.order__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+}
+
+.order__inputs input {
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 22px;
+  width: 220px;
+  padding: 11px 13px 9px;
+  border: thin solid #e6edff;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+}
+
+.order__inputs .m-time {
+  margin-left: 20px;
+}
+
+.counter-container {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.counter-container input {
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 22px;
+  width: 44px;
+  padding: 11px 13px 9px;
+  border: thin solid #e6edff;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.order input {
+  color: #e6edff;
+  border-radius: 0%;
+  border: none;
+}
+
+.order span {
+  padding-left: 8px;
+}
+
+.order__personal input {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 22px;
+  width: 400px;
+  padding: 11px 13px 9px;
+  border: thin solid #e6edff;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 44px;
+}
+
+.order__personal .cb-phone {
+  margin-bottom: 40px;
+}
+
+.celebrate-button {
+  position: fixed;
+  text-decoration: none;
+  width: 205px;
+  height: 52px;
+  border: none;
+  background: #e96032;
+  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
+          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.2);
+}
+
+.celebrate-button p {
+  font-family: Fira Sans;
+  padding-top: 19px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.celebrate-button:hover {
+  background: #e96032;
+  -webkit-box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
+          box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }

@@ -47,11 +47,12 @@
             <li class="item prices" data-id='prices'><a href="#prices">Ceny</a></li>
             <li class="item events" data-id='events'><a href="#events">Události</a></li>
             <li class="item contacts" data-id='contacts'><a href="#contacts">Kontakty</a></li>
+            <li class="item celebrate" data-id='celebrate'><a class="button-celebrate" href="#celebrate">
+                    <p> Objednat oslavu</p>
+                </a></li>
         </ul>
 
-        <a class="button-celebrate" href="">
-            <p> Objednat oslavu</p>
-        </a>
+
 
         <ul class="phone-mail">
             <li>
@@ -78,12 +79,6 @@
             <div class="color back-2"></div>
             <div class="color back-3"></div>
         </div>
-
-
-
-
-
-
 
 
 
@@ -333,6 +328,115 @@
                     <a class="contacts-last-link" href="/upload/iblock/438/43808b5dea5f40685a6d4b66fc346e5d.pdf"
                         target="_blank">Návštěvní řád Superland</a>
                 </div>
+
+            </div>
+        </div>
+
+        <div id="celebrate" class="page page-active">
+            <div class="title-celebrate">
+                <h1 class="title-celebrate-text">Rezervace</h1>
+            </div>
+
+            <div class="text-celebrate-all">
+                <p class="text-celebrate">
+                    1. Vyberte datum a čas
+                </p>
+
+                <div class="order__inputs">
+                    <div class="input m-date"><input class="js-date" type="text" name="date[date]" value=""
+                            placeholder="Datum" max="2022-12-31" min="2021-01-11">
+                    </div>
+
+                    <div class="input m-time"><input class="js-time" type="text" name="date[time]" value=""
+                            placeholder="Čas">
+                    </div>
+                </div>
+
+                <p class="text-celebrate">
+                    2. Počet hostů
+                </p>
+
+                <div class="counter-container">
+                    <p class="text-celebrate-counter">
+                        Dospělý
+                    </p>
+                    <div class="counter">
+                        <button class="counter__minus js-counter-m" type="button" disabled="">
+                        </button>
+                        <input class="js-counter" type="number" name="guests[adult]" value="1" data-max="10">
+                        <button class="counter__plus js-counter-p" type="button">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="counter-container">
+                    <p class="text-celebrate-counter">
+                        Děti
+                    </p>
+                    <div class="counter">
+                        <button class="counter__minus js-counter-m" type="button" disabled="">
+                        </button>
+                        <input class="js-counter" type="number" name="guests[adult]" value="2" data-max="10">
+                        <button class="counter__plus js-counter-p" type="button">
+                        </button>
+                    </div>
+                </div>
+
+                <p class="text-celebrate">
+                    3. Vyberte domeček
+                </p>
+
+                <p class="text-celebrate">
+                    4. Další služby
+                </p>
+                <section class="order">
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="28"><span>výzdoba</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="27"><span>narozeninový dort</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="26"><span>animační program</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="25"><span>různá školení </span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="55"><span>služby fotografa</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="add_service[]" value="56"><span>malování na obličej</span>
+                    </label>
+                </section>
+
+                <p class="text-celebrate">
+                    5.Kontaktní informace
+                </p>
+                <div class="order__personal">
+                    <div class="input"><input class="js-name" type="text" name="contacts[name]"
+                            placeholder="Jméno a příjmení"></div>
+                    <div class="input"><input class="js-email" type="email" name="contacts[email]" placeholder="E-mail">
+                    </div>
+                    <div class="input"><input class="cb-phone js-order-phone" name="contacts[phone]" type="tel"
+                            placeholder="Telefon" inputmode="text"></div>
+                </div>
+                <section class="order">
+                    <label class="checkbox">
+                        <input class="js-rules-1" type="checkbox">
+                        <a href="/upload/iblock/e95/e95f6afac3240963238354d60c3fccad.pdf" target="_blank">Tímhle dávám
+                            souhlas se zpracováním mých osobních údajů</a>
+                    </label>
+                    <label class="checkbox">
+                        <input class="js-rules-2" type="checkbox">
+                        <span>Tímhle dávám souhlas na zasílání informačních a reklamních </br>
+                            sdělení od společnosti Kigi Park s.r.o.</span>
+                    </label>
+                </section>
+
+                <a class="celebrate-button" href="#celebrate">
+                    <p>Objednat</p>
+                </a>
 
             </div>
         </div>
