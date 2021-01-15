@@ -847,6 +847,14 @@ body {
         height: 44px;
     }
 }
+.counter__minus {
+    width: 30px;
+    height: 30px;
+    background-color: #e6edff;
+    border: none;
+    color: #ffffff;
+    font-size: 700;
+}
 
 .order {
     display: flex;
@@ -855,7 +863,7 @@ body {
     margin-bottom: 30px;
 
     span {
-        padding-left: 10px;
+        padding-left: 14px;
     }
 }
 
@@ -915,4 +923,26 @@ body {
     font-size: 14px;
     letter-spacing: normal;
     line-height: 22px;
+    input {
+        display: none;
+    }
+    &-btn {
+        margin-top: 2px;
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #e6edff;
+        &-active {
+            &::before {
+                margin: 4px 4px 4px 4px;
+                position: absolute;
+                content: "";
+                display: block;
+                width: 8px;
+                height: 8px;
+                background-color: #2d52a4;
+            }
+        }
+    }
 }

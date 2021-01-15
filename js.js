@@ -116,5 +116,27 @@ window.addEventListener('load', () => {
 }
 )
 
+document.querySelectorAll('.order .checkbox-btn').forEach(item => {
+    item.addEventListener('click', (e) => {
+        console.log(e.target)
 
+        const target = e.target.closest('.checkbox-btn')
+
+        if (target.classList.contains('checkbox-btn-active')) {
+            target.classList.remove('checkbox-btn-active')
+        } else {
+            target.classList.add('checkbox-btn-active')
+
+        }
+        //надо чтоб определяло какой ты сегодня квадрат и добавляло или убирало свойство от полученных знаний//
+        //input убирало или добавляло атрибут check//
+        //спросить про эмуляцию кнопок
+
+
+
+
+    }
+    )
+}
+)
 

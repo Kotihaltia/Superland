@@ -976,6 +976,15 @@ body {
   height: 44px;
 }
 
+.counter__minus {
+  width: 30px;
+  height: 30px;
+  background-color: #e6edff;
+  border: none;
+  color: #ffffff;
+  font-size: 700;
+}
+
 .order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,7 +998,7 @@ body {
 }
 
 .order span {
-  padding-left: 10px;
+  padding-left: 14px;
 }
 
 .order__personal input {
@@ -1062,4 +1071,27 @@ body {
   font-size: 14px;
   letter-spacing: normal;
   line-height: 22px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox-btn {
+  margin-top: 2px;
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #e6edff;
+}
+
+.checkbox-btn-active::before {
+  margin: 4px 4px 4px 4px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #2d52a4;
 }
