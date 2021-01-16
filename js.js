@@ -128,15 +128,18 @@ document.querySelectorAll('.order .checkbox-btn').forEach(item => {
             target.classList.add('checkbox-btn-active')
 
         }
-        //надо чтоб определяло какой ты сегодня квадрат и добавляло или убирало свойство от полученных знаний//
-        //input убирало или добавляло атрибут check//
+
         //спросить про эмуляцию кнопок
-
-
-
+        //input - стилизую кнопки, потом
+        //нахожу нужный инпут и по клику на кнопку в этом инпуте прибавляю или убавляю цыфру
 
     }
     )
 }
 )
 
+document.querySelector('.title-button').addEventListener('click', () => {
+    document.querySelector('.menu-icon-wrapper').click()
+    document.querySelector('.button-celebrate').click()
+
+})

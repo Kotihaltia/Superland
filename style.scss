@@ -813,6 +813,7 @@ body {
     flex-direction: row;
     font-size: 14px;
     input {
+        outline: none;
         font-size: 14px;
         letter-spacing: normal;
         line-height: 22px;
@@ -833,21 +834,33 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 250px;
     justify-content: space-between;
     input {
+        outline: none;
         font-size: 14px;
         letter-spacing: normal;
         line-height: 22px;
-        width: 44px;
+        padding-top: 1px;
+        width: 30px;
+        height: 30px;
         padding: 11px 13px 9px;
         border: thin solid #e6edff;
         border-radius: 2px;
         box-sizing: border-box;
-        height: 44px;
     }
 }
-.counter__minus {
+
+.counter {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter__minus,
+.counter__plus {
+    outline: none;
     width: 30px;
     height: 30px;
     background-color: #e6edff;
@@ -861,7 +874,7 @@ body {
     flex-direction: column;
     font-size: 14px;
     margin-bottom: 30px;
-
+    outline: none;
     span {
         padding-left: 14px;
     }
@@ -869,6 +882,7 @@ body {
 
 .order__personal {
     input {
+        outline: none;
         margin-bottom: 20px;
         font-size: 14px;
         letter-spacing: normal;
@@ -912,6 +926,12 @@ body {
     box-shadow: 0px 4px 10px rgba(233, 96, 50, 0.6);
 }
 
+input.js-counter::-webkit-outer-spin-button,
+input.js-counter::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .checkbox {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -924,6 +944,7 @@ body {
     letter-spacing: normal;
     line-height: 22px;
     input {
+        outline: none;
         display: none;
     }
     &-btn {
@@ -933,6 +954,7 @@ body {
         width: 16px;
         height: 16px;
         background-color: #e6edff;
+        flex-shrink: 0;
         &-active {
             &::before {
                 margin: 4px 4px 4px 4px;
