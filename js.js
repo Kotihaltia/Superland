@@ -143,3 +143,5 @@ document.querySelector('.title-button').addEventListener('click', () => {
     document.querySelector('.button-celebrate').click()
 
 })
+
+

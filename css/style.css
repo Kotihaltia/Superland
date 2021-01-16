@@ -967,16 +967,14 @@ body {
 }
 
 .counter-container input {
-  outline: none;
+  text-align: center;
   font-size: 14px;
   letter-spacing: normal;
   line-height: 22px;
-  padding-top: 1px;
-  width: 30px;
-  height: 30px;
-  padding: 11px 13px 9px;
+  width: 36px;
+  height: 36px;
+  outline: 0 !important;
   border: thin solid #e6edff;
-  border-radius: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -991,12 +989,16 @@ body {
           flex-direction: row;
 }
 
+.counter button {
+  font-size: 22px;
+}
+
 .counter__minus,
 .counter__plus {
   outline: none;
-  width: 30px;
-  height: 30px;
-  background-color: #e6edff;
+  width: 36px;
+  height: 36px;
+  background-color: #c1d3ff;
   border: none;
   color: #ffffff;
   font-size: 700;
@@ -1017,6 +1019,10 @@ body {
 
 .order span {
   padding-left: 14px;
+}
+
+.textbox-link a {
+  color: #2d52a4;
 }
 
 .order__personal input {
