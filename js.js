@@ -15,16 +15,16 @@ document.querySelector('.menu-icon-wrapper').onclick = function () {
 document.querySelectorAll('.site-menu .item').forEach(item => {
 
     item.addEventListener('click', (e) => {
-        console.log(e.target)
+
 
         const target = e.target.closest('.item')
-        console.log(target.dataset.id)
+
         const pageIdMenu = target.dataset.id
         document.querySelectorAll('.page').forEach(page => {
 
-            console.log(page)
+
             const pageId = page.getAttribute('id')
-            console.log(pageId)
+
             if ((pageIdMenu !== pageId) && !page.classList.contains('page-active')) {
                 page.classList.add('page-active');
             }
@@ -62,7 +62,7 @@ window.addEventListener('load', () => {
             color3.classList.remove('show');
 
 
-            console.log(1)
+
 
 
 
@@ -86,7 +86,7 @@ window.addEventListener('load', () => {
 
             color3.classList.remove('hide');
             color3.classList.add('show');
-            console.log(2)
+
             return
         }
         if (pick.classList.contains('back-3')) {
@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
             color3.classList.add('hide');
             color3.classList.remove('show');
 
-            console.log(3)
+
 
         }
 
@@ -118,7 +118,7 @@ window.addEventListener('load', () => {
 
 document.querySelectorAll('.order .checkbox-btn').forEach(item => {
     item.addEventListener('click', (e) => {
-        console.log(e.target)
+
 
         const target = e.target.closest('.checkbox-btn')
 
@@ -145,3 +145,48 @@ document.querySelector('.title-button').addEventListener('click', () => {
 })
 
 
+
+
+let plusUP = document.querySelector('.js-counter-p');
+let plus = document.querySelector('.js-counter-p-d');
+
+let minusUP = document.querySelector('.js-counter-m');
+let minus = document.querySelector('.js-counter-m-d');
+
+let windowup = document.querySelector('.js-counter-up');
+let windowdown = document.querySelector('.js-counter-d');
+
+plusUP.addEventListener('click', () => {
+    let val = windowup.value;
+    if (val < 10) { ++val };
+    windowup.value = val;
+}
+)
+
+minusUP.addEventListener('click', () => {
+    let val = windowup.value;
+    if (val > 0) { --val };
+    windowup.value = val;
+}
+)
+
+plus.addEventListener('click', () => {
+    let val = windowdown.value;
+    if (val < 10) { ++val };
+    windowdown.value = val;
+}
+)
+
+minus.addEventListener('click', () => {
+    let val = windowdown.value;
+    if (val > 0) { --val };
+    windowdown.value = val;
+}
+)
+
+
+
+
+//function (plus => 1, plus++)
+
+//if plus => 1,//
