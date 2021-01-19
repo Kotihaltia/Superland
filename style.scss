@@ -93,7 +93,7 @@ body {
             background-image: url(/img/hraci.png);
         }
         &.back-3 {
-            background-image: url(/img/chutna.png);
+            background-image: url(/img/pani_size.png);
         }
     }
     .color {
@@ -471,7 +471,7 @@ body {
 }
 
 .text-about {
-    width: 600px;
+    width: 525px;
     height: auto;
     margin-bottom: 15px;
     font-size: 14px;
@@ -501,6 +501,7 @@ body {
 
 .title-attraction {
     margin-top: 42px;
+    margin-bottom: 36px;
     background-color: #e96032;
     width: 270px;
     height: 60px;
@@ -587,7 +588,7 @@ body {
         font-size: 14px;
     }
     &__bottom {
-        margin-top: 8px;
+        margin-top: 14px;
         margin-bottom: 8px;
         width: 410px;
         display: flex;
