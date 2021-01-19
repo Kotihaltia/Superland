@@ -118,21 +118,25 @@ window.addEventListener('load', () => {
 
 document.querySelectorAll('.order .checkbox-btn').forEach(item => {
     item.addEventListener('click', (e) => {
-
-
         const target = e.target.closest('.checkbox-btn')
-
         if (target.classList.contains('checkbox-btn-active')) {
             target.classList.remove('checkbox-btn-active')
         } else {
             target.classList.add('checkbox-btn-active')
-
         }
+    }
+    )
+}
+)
 
-        //спросить про эмуляцию кнопок
-        //input - стилизую кнопки, потом
-        //нахожу нужный инпут и по клику на кнопку в этом инпуте прибавляю или убавляю цыфру
-
+document.querySelectorAll('.block .block__bottom__btn').forEach(item => {
+    item.addEventListener('click', (e) => {
+        const target = e.target.closest('.block__bottom__btn')
+        if (target.classList.contains('block__bottom__btn__active')) {
+            target.classList.remove('block__bottom__btn__active')
+        } else {
+            target.classList.add('block__bottom__btn__active')
+        }
     }
     )
 }

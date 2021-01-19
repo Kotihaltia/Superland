@@ -401,7 +401,7 @@ body {
 .title-about {
     margin-top: 42px;
     background-color: #e96032;
-    width: 240px;
+    width: 264px;
     height: 60px;
 
     &-text {
@@ -583,7 +583,49 @@ body {
         padding: 20px 0px 20px 0px;
     }
     &__text {
+        line-height: 24px;
         font-size: 14px;
+    }
+    &__bottom {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 410px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 22px;
+        input {
+            outline: none;
+            display: none;
+        }
+        &__text {
+            margin-left: 10px;
+        }
+        &__btn {
+            margin-top: 2px;
+            position: relative;
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #c1d3ff;
+            flex-shrink: 0;
+            &__active {
+                &::before {
+                    margin: 4px 4px 4px 4px;
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 100%;
+                    background-color: #2d52a4;
+                }
+            }
+        }
     }
 }
 
@@ -592,7 +634,7 @@ body {
 .title-services {
     margin-top: 42px;
     background-color: #e96032;
-    width: 398px;
+    width: 254px;
     height: 60px;
 
     &-text {
@@ -659,7 +701,7 @@ body {
 .title-prices {
     margin-top: 42px;
     background-color: #e96032;
-    width: 280px;
+    width: 223px;
     height: 60px;
 
     &-text {
@@ -698,7 +740,7 @@ body {
 .title-events {
     margin-top: 42px;
     background-color: #e96032;
-    width: 280px;
+    width: 286px;
     height: 60px;
     &-text {
         color: #fff;
@@ -1013,7 +1055,7 @@ input.js-counter::-webkit-inner-spin-button {
         display: block;
         width: 16px;
         height: 16px;
-        background-color: #e6edff;
+        background-color: #c1d3ff;
         flex-shrink: 0;
         &-active {
             &::before {

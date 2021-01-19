@@ -474,7 +474,7 @@ body {
 .title-about {
   margin-top: 42px;
   background-color: #e96032;
-  width: 240px;
+  width: 264px;
   height: 60px;
 }
 
@@ -676,14 +676,69 @@ body {
 }
 
 .block__text {
+  line-height: 24px;
   font-size: 14px;
+}
+
+.block__bottom {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+
+.block__bottom input {
+  outline: none;
+  display: none;
+}
+
+.block__bottom__text {
+  margin-left: 10px;
+}
+
+.block__bottom__btn {
+  margin-top: 2px;
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #c1d3ff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.block__bottom__btn__active::before {
+  margin: 4px 4px 4px 4px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #2d52a4;
 }
 
 /*services==============================================================*/
 .title-services {
   margin-top: 42px;
   background-color: #e96032;
-  width: 398px;
+  width: 254px;
   height: 60px;
 }
 
@@ -753,7 +808,7 @@ body {
 .title-prices {
   margin-top: 42px;
   background-color: #e96032;
-  width: 280px;
+  width: 223px;
   height: 60px;
 }
 
@@ -795,7 +850,7 @@ body {
 .title-events {
   margin-top: 42px;
   background-color: #e96032;
-  width: 280px;
+  width: 286px;
   height: 60px;
 }
 
@@ -1181,7 +1236,7 @@ input.js-counter::-webkit-inner-spin-button {
   display: block;
   width: 16px;
   height: 16px;
-  background-color: #e6edff;
+  background-color: #c1d3ff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
